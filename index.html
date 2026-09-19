@@ -36,9 +36,9 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            justify-content: space-between; /* توزيع العناصر بانتظام على طول الشاشة بالكامل */
+            justify-content: flex-start;
             align-items: center;
-            padding: 30px 20px;
+            padding: 20px 20px 40px 20px;
         }
         .main-container {
             display: flex;
@@ -46,52 +46,52 @@
             align-items: center;
             width: 100%;
             max-width: 400px;
-            margin: auto 0; /* توسيط المحتوى عمودياً بانسجام تام */
+            margin-top: 10px;
         }
         /* أيقونة المتجر الفاخرة في الأعلى */
         .store-icon-box {
-            width: 76px;
-            height: 76px;
+            width: 72px;
+            height: 72px;
             background: linear-gradient(145deg, #1f1f1f, #0f0f0f);
             border: 1px solid rgba(212, 175, 55, 0.2);
-            border-radius: 22px;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 16px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
         }
         .store-icon-box svg {
-            width: 36px;
-            height: 36px;
+            width: 34px;
+            height: 34px;
             stroke: #d4af37;
         }
         /* اسم المتجر الراقي */
         h1 {
             color: #ffffff;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 900;
             margin-bottom: 4px;
             letter-spacing: 1.5px;
         }
         .subtitle {
             color: #888888;
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 700;
-            letter-spacing: 4px;
-            margin-bottom: 30px;
+            letter-spacing: 3px;
+            margin-bottom: 22px;
         }
         /* زر أيقونة الواتساب الوسطى */
         .whatsapp-circle-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 105px;
-            height: 105px;
+            width: 95px;
+            height: 95px;
             background: linear-gradient(145deg, #25d366, #128c7e);
             border-radius: 50%;
-            margin: 0 auto 16px auto;
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
+            margin: 0 auto 12px auto;
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
             text-decoration: none;
             cursor: pointer;
             position: relative;
@@ -100,58 +100,58 @@
         }
         .whatsapp-circle-btn:hover {
             transform: scale(1.06);
-            box-shadow: 0 20px 45px rgba(37, 211, 102, 0.45);
+            box-shadow: 0 16px 35px rgba(37, 211, 102, 0.45);
         }
         .whatsapp-circle-btn:active {
             transform: scale(0.92);
             background: linear-gradient(145deg, #128c7e, #075e54);
         }
         .whatsapp-circle-btn svg {
-            width: 54px;
-            height: 54px;
+            width: 48px;
+            height: 48px;
             fill: #ffffff;
         }
         .action-label {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 900;
             color: #ffffff;
             margin-bottom: 4px;
         }
         .action-sub {
-            font-size: 13px;
+            font-size: 12px;
             color: #aaaaaa;
             font-weight: 500;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         /* نص ترحيبي راقي ومختصر */
         .welcome-text {
-            font-size: 14px;
+            font-size: 13px;
             color: #999999;
-            line-height: 1.7;
-            max-width: 350px;
-            margin: 0 auto;
+            line-height: 1.6;
+            max-width: 340px;
+            margin: 0 auto 20px auto;
             font-weight: 400;
         }
-        /* الزر السفلي العريض (راسلنا واتساب) متناسق في أسفل الصفحة تماماً */
+        /* الزر السفلي العريض مرفوع للأعلى بمقدار 50 بكسل إضافية لتجنب الالتصاق بالحافة السفلية */
         .whatsapp-bottom-bar {
             background-color: #25d366;
             color: #ffffff;
-            padding: 16px 22px;
-            font-size: 17px;
+            padding: 15px 22px;
+            font-size: 16px;
             font-weight: 700;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            width: 100%;
-            max-width: 400px;
-            margin-top: 35px;
+            width: 90%;
+            max-width: 380px;
+            margin: 20px auto 55px auto; /* رفع الزر السفلي 50 بكسل بمسافة متناسقة ومريحة */
             border-radius: 50px;
             cursor: pointer;
             position: relative;
             z-index: 10;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.25);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
             transition: all 0.15s ease;
         }
         .whatsapp-bottom-bar:active {
@@ -159,15 +159,13 @@
             background-color: #128c7e;
         }
         .whatsapp-bottom-bar svg {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             fill: #ffffff;
         }
     </style>
 </head>
 <body>
-
-    <div></div> <!-- عنصر علوي للمساعدة في ضبط التوزيع الممتد -->
 
     <div class="main-container">
         <!-- أيقونة المتجر الفاخرة -->
@@ -201,7 +199,7 @@
         </div>
     </div>
 
-    <!-- الزر السفلي العريض (راسلنا واتساب) المتناسق -->
+    <!-- الزر السفلي العريض المرفوع 50 بكسل -->
     <a href="https://wa.me/972539085840?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20Tiktok%20%D9%88%20%D8%A7%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF" 
        class="whatsapp-bottom-bar" 
        onclick="ttq.track('Contact'); ttq.track('InitiateCheckout', {contents: [{content_id: 'cosmetics_store', content_name: 'Cosmetics Order', quantity: 1, price: 1}], value: 1, currency: 'ILS'});">
