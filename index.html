@@ -36,60 +36,60 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            justify-content: space-between;
+            justify-content: flex-start; /* إلغاء التباعد المطلق لضمان تمركز العناصر بالأعلى ورفع الزر السفلي */
         }
         .main-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 25px 20px 10px 20px;
-            flex: 1;
+            padding: 25px 20px 15px 20px;
+            width: 100%;
         }
-        /* أيقونة المتجر الفاخرة في الأعلى بمعايير عالمية */
+        /* أيقونة المتجر الفاخرة في الأعلى */
         .store-icon-box {
-            width: 76px;
-            height: 76px;
+            width: 70px;
+            height: 70px;
             background: linear-gradient(145deg, #1f1f1f, #0f0f0f);
             border: 1px solid rgba(212, 175, 55, 0.2);
-            border-radius: 22px;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 14px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            margin-bottom: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
         }
         .store-icon-box svg {
-            width: 36px;
-            height: 36px;
-            stroke: #d4af37; /* لمسة ذهبية ملكية راقية */
+            width: 32px;
+            height: 32px;
+            stroke: #d4af37;
         }
         /* اسم المتجر الراقي */
         h1 {
             color: #ffffff;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 900;
             margin-bottom: 4px;
             letter-spacing: 1.5px;
         }
         .subtitle {
             color: #888888;
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 700;
-            letter-spacing: 4px;
-            margin-bottom: 20px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
         }
-        /* زر أيقونة الواتساب الوسطى مع مسافات متناسقة */
+        /* زر أيقونة الواتساب الوسطى */
         .whatsapp-circle-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             background: linear-gradient(145deg, #25d366, #128c7e);
             border-radius: 50%;
-            margin: 0 auto 12px auto;
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
+            margin: 0 auto 10px auto;
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
             text-decoration: none;
             cursor: pointer;
             position: relative;
@@ -98,44 +98,44 @@
         }
         .whatsapp-circle-btn:hover {
             transform: scale(1.06);
-            box-shadow: 0 20px 45px rgba(37, 211, 102, 0.45);
+            box-shadow: 0 16px 35px rgba(37, 211, 102, 0.45);
         }
         .whatsapp-circle-btn:active {
             transform: scale(0.92);
             background: linear-gradient(145deg, #128c7e, #075e54);
         }
         .whatsapp-circle-btn svg {
-            width: 52px;
-            height: 52px;
+            width: 46px;
+            height: 46px;
             fill: #ffffff;
         }
         .action-label {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 900;
             color: #ffffff;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
         .action-sub {
-            font-size: 13px;
+            font-size: 12px;
             color: #aaaaaa;
             font-weight: 500;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
-        /* نص ترحيبي راقي ومختصر لبناء الثقة */
+        /* نص ترحيبي راقي ومختصر */
         .welcome-text {
-            font-size: 14px;
+            font-size: 13px;
             color: #999999;
-            line-height: 1.7;
-            max-width: 350px;
+            line-height: 1.6;
+            max-width: 340px;
             margin: 0 auto;
             font-weight: 400;
         }
-        /* الزر السفلي العريض (راسلنا واتساب) مرفوع للأعلى بمقدار 50 بكسل إضافية */
+        /* الزر السفلي العريض (راسلنا واتساب) المرفوع بمسافة ممتازة واحترافية */
         .whatsapp-bottom-bar {
             background-color: #25d366;
             color: #ffffff;
             padding: 15px 22px;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 700;
             text-decoration: none;
             display: flex;
@@ -143,13 +143,13 @@
             justify-content: center;
             gap: 12px;
             width: 90%;
-            max-width: 400px;
-            margin: 0 auto 70px auto; /* تم رفع الزر بمقدار 50 بكسل إضافية عن السابق */
+            max-width: 380px;
+            margin: 25px auto 30px auto; /* تم رفع الزر للأعلى بشكل واضح ومناسب للشاشات */
             border-radius: 50px;
             cursor: pointer;
             position: relative;
             z-index: 10;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.25);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
             transition: all 0.15s ease;
         }
         .whatsapp-bottom-bar:active {
@@ -157,8 +157,8 @@
             background-color: #128c7e;
         }
         .whatsapp-bottom-bar svg {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             fill: #ffffff;
         }
     </style>
@@ -179,7 +179,7 @@
         <div class="subtitle">OFFICIAL STORE</div>
 
         <!-- زر أيقونة الواتساب الوسطى مع رقم الهاتف والأحداث -->
-        <a href="https://wa.me/972539085840?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20Tiktok%20%D9%88%20%D8%A7%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF" 
+        <a href="https://wa.me/972539085840?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20Tiktok%20%D9%88%20%D8%A7%D8%**D**OD%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF" 
            class="whatsapp-circle-btn" 
            onclick="ttq.track('Contact'); ttq.track('InitiateCheckout', {contents: [{content_id: 'cosmetics_store', content_name: 'Cosmetics Order', quantity: 1, price: 1}], value: 1, currency: 'ILS'});" 
            aria-label="راسلنا عبر واتساب">
