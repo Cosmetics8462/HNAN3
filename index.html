@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Luxe - Official Store</title>
+    <title>Cosmetics - Official Store</title>
 
     <!-- خط تجوال الفاخر -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -30,123 +30,126 @@
         }
         body {
             font-family: 'Tajawal', sans-serif;
-            background-color: #0b0b0b;
+            background-color: #0c0c0c;
             color: #ffffff;
             text-align: center;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             justify-content: space-between;
-            align-items: center;
-            padding: 35px 20px 25px 20px;
         }
         .main-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            max-width: 400px;
+            justify-content: center;
+            padding: 50px 20px;
+            flex: 1;
         }
-        /* أيقونة المتجر الفاخرة في الأعلى */
+        /* أيقونة المتجر الفاخرة في الأعلى بمعايير عالمية */
         .store-icon-box {
-            width: 76px;
-            height: 76px;
-            background: linear-gradient(145deg, #181818, #0d0d0d);
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            border-radius: 20px;
+            width: 84px;
+            height: 84px;
+            background: linear-gradient(145deg, #1f1f1f, #0f0f0f);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 26px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+            margin-bottom: 22px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
         }
         .store-icon-box svg {
-            width: 36px;
-            height: 36px;
-            stroke: #d4af37;
+            width: 40px;
+            height: 40px;
+            stroke: #d4af37; /* لمسة ذهبية ملكية راقية */
         }
-        /* اسم المتجر تماماً مثل الصورة */
+        /* اسم المتجر الراقي */
         h1 {
             color: #ffffff;
-            font-size: 29px;
+            font-size: 32px;
             font-weight: 900;
             margin-bottom: 6px;
-            letter-spacing: 1px;
-            font-family: sans-serif;
+            letter-spacing: 1.5px;
         }
         .subtitle {
-            color: #8c8c8c;
+            color: #888888;
             font-size: 11px;
             font-weight: 700;
             letter-spacing: 4px;
-            margin-bottom: 35px;
+            margin-bottom: 45px;
         }
-        /* زر أيقونة الواتساب الوسطى */
+        /* زر أيقونة الواتساب الوسطى بتصميم مذهل وتفاعل عالي الاستجابة وقابل للنقر 100% */
         .whatsapp-circle-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 110px;
-            height: 110px;
+            width: 125px;
+            height: 125px;
             background: linear-gradient(145deg, #25d366, #128c7e);
             border-radius: 50%;
-            margin: 0 auto 16px auto;
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
+            margin: 0 auto 20px auto;
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.35);
             text-decoration: none;
             cursor: pointer;
             position: relative;
             z-index: 10;
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .whatsapp-circle-btn:hover {
+            transform: scale(1.06);
+            box-shadow: 0 20px 45px rgba(37, 211, 102, 0.45);
+        }
         .whatsapp-circle-btn:active {
             transform: scale(0.92);
+            background: linear-gradient(145deg, #128c7e, #075e54);
         }
         .whatsapp-circle-btn svg {
-            width: 55px;
-            height: 55px;
+            width: 68px;
+            height: 68px;
             fill: #ffffff;
         }
         .action-label {
-            font-size: 19px;
+            font-size: 22px;
             font-weight: 900;
             color: #ffffff;
             margin-bottom: 6px;
         }
         .action-sub {
-            font-size: 13px;
+            font-size: 14px;
             color: #aaaaaa;
             font-weight: 500;
-            margin-bottom: 25px;
+            margin-bottom: 35px;
         }
-        /* النص الترحيبي تماماً مثل الصورة */
+        /* نص ترحيبي راقي ومختصر لبناء الثقة */
         .welcome-text {
-            font-size: 13.5px;
-            color: #888888;
-            line-height: 1.7;
-            max-width: 340px;
+            font-size: 15px;
+            color: #999999;
+            line-height: 1.8;
+            max-width: 350px;
             margin: 0 auto;
             font-weight: 400;
         }
-        /* الزر السفلي العريض (راسلنا واتساب) مطابق للصورة تماماً وبأبعادها المريحة */
+        /* الزر السفلي العريض (راسلنا واتساب) قابل للنقر 100% */
         .whatsapp-bottom-bar {
             background-color: #25d366;
             color: #ffffff;
-            padding: 16px 20px;
-            font-size: 17px;
+            padding: 18px 25px;
+            font-size: 18px;
             font-weight: 700;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            width: 100%;
-            max-width: 390px;
-            margin-top: 30px;
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto 35px auto;
             border-radius: 50px;
             cursor: pointer;
             position: relative;
             z-index: 10;
-            box-shadow: 0 8px 22px rgba(37, 211, 102, 0.25);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.25);
             transition: all 0.15s ease;
         }
         .whatsapp-bottom-bar:active {
@@ -154,8 +157,8 @@
             background-color: #128c7e;
         }
         .whatsapp-bottom-bar svg {
-            width: 22px;
-            height: 22px;
+            width: 24px;
+            height: 24px;
             fill: #ffffff;
         }
     </style>
@@ -171,14 +174,14 @@
             </svg>
         </div>
 
-        <!-- اسم المتجر طبقاً للصورة -->
-        <h1>Aura Luxe</h1>
-        <div class="subtitle">OFFICIAL STORE</div>
+        <!-- اسم المتجر كوزمتكس -->
+        <h1>كوزمتكس</h1>
+        <div class="subtitle">COSMETICS STORE</div>
 
-        <!-- زر أيقونة الواتساب الوسطى مع رقم الهاتف وأحداث التتبع -->
+        <!-- زر أيقونة الواتساب الوسطى مع الرقم الجديد والرسالة والأحداث الدقيقة -->
         <a href="https://wa.me/972539085840?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20Tiktok%20%D9%88%20%D8%A7%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF" 
            class="whatsapp-circle-btn" 
-           onclick="ttq.track('Contact'); ttq.track('InitiateCheckout', {contents: [{content_id: 'aura_luxe_store', content_name: 'Aura Luxe Order', quantity: 1, price: 1}], value: 1, currency: 'ILS'});" 
+           onclick="ttq.track('Contact'); ttq.track('InitiateCheckout', {contents: [{content_id: 'cosmetics_store', content_name: 'Cosmetics Order', quantity: 1, price: 1}], value: 1, currency: 'ILS'});" 
            aria-label="راسلنا عبر واتساب">
             <svg viewBox="0 0 24 24">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
@@ -188,16 +191,16 @@
         <div class="action-label">اضغط هنا</div>
         <div class="action-sub">ابدأ محادثة الطلب الفوري</div>
 
-        <!-- النص الترحيبي -->
+        <!-- نص ترحيبي راقي -->
         <div class="welcome-text">
             نحن هنا لنقدم لك تجربة تسوق استثنائية. تواصل معنا الآن لخدمتك بسرعة وإتمام طلبك بكل سهولة.
         </div>
     </div>
 
-    <!-- الزر السفلي العريض المطابق للصورة -->
+    <!-- الزر السفلي العريض (راسلنا واتساب) مع الرقم الجديد والرسالة والأحداث الدقيقة -->
     <a href="https://wa.me/972539085840?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20Tiktok%20%D9%88%20%D8%A7%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF" 
        class="whatsapp-bottom-bar" 
-       onclick="ttq.track('Contact'); ttq.track('InitiateCheckout', {contents: [{content_id: 'aura_luxe_store', content_name: 'Aura Luxe Order', quantity: 1, price: 1}], value: 1, currency: 'ILS'});">
+       onclick="ttq.track('Contact'); ttq.track('InitiateCheckout', {contents: [{content_id: 'cosmetics_store', content_name: 'Cosmetics Order', quantity: 1, price: 1}], value: 1, currency: 'ILS'});">
         <span>راسلنا عبر واتساب</span>
         <svg viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
